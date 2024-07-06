@@ -51,7 +51,6 @@ public class Main {
       int dipasits = 29000;
       int moth = 0;
       for ( int i = 0; i < 12; i = i + 1 ){
-        moth = moth + 0;
         moth = moth + dipasits;
           System.out.println("Месяц " + i + " , сумма накопления равна " + moth + " рублей");
 
@@ -59,17 +58,23 @@ public class Main {
 
         System.out.println("Задача 9");
 
-      int money = 29000;
-      int attachments = 0;
-      for (int i = 0; i < 12; i = i + 1){
-          money = money + money/100;
-          money = money + attachments;
-          System.out.println("Месяц " + i + " , сумма накопления равна " + money + " рублей");
-      }
+        int money = 29000;
+        int deposites = 0;
+        for (int i = 1; i <= 12; i = i + 1){
+            deposites = deposites + money;
+            deposites = deposites + deposites/100;
+
+            System.out.println("Месяц " + i + " , сумма накопления " + deposites + " рублей");
+        }
+
+
+
+
+
 
         System.out.println("Задача 10");
 
-      for ( int i = 1; i < 10; i = i + 1){
+      for ( int i = 1; i <= 10; i = i + 1){
           System.out.println("2 * " + i + " = " + 2 * i);
       }
 
